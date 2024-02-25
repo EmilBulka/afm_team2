@@ -57,6 +57,9 @@ html {
 
 .secondchild1 {
   font-size: 0.75em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* @media rules */
@@ -238,7 +241,15 @@ html {
     /* 8px domyslny margin od body w przegladarce */
     height: calc(100vh / 2);
     border: 5px solid grey;
+    justify-content: center;
+    
   }
+
+  .box:nth-child(1) {
+    justify-content: center;
+    
+  }
+
 
   .boxLastline,
   .box:nth-child(4),
@@ -262,6 +273,14 @@ html {
     order: 3;
     flex-grow: 3;
     flex-basis: calc(((100vw) / 6 - 16px / 6));
+    background: rgb(236,255,0);
+    background: -moz-linear-gradient(11deg, rgba(236,255,0,1) 0%, rgba(58,183,22,1) 47%, rgba(255,0,236,1) 100%);
+    background: -webkit-linear-gradient(11deg, rgba(236,255,0,1) 0%, rgba(58,183,22,1) 47%, rgba(255,0,236,1) 100%);
+    background: linear-gradient(11deg, rgba(236,255,0,1) 0%, rgba(58,183,22,1) 47%, rgba(255,0,236,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecff00",endColorstr="#ff00ec",GradientType=1);
+    align-items: center;
+    display: flex;
+
   }
 
   .box:nth-child(6) {
@@ -272,4 +291,30 @@ html {
     flex-basis: calc(((100vw) / 6 - 16px / 6));
     flex-grow: 1;
   }
+}
+
+.jajo {
+
+  background-color: yellow;
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  text-align: center;
+  mix-blend-mode: multiply;
+}
+
+@keyframes spin {
+from {
+    transform:rotate(0deg);
+}
+to {
+    transform:rotate(360deg);
+};
+}
+
+.jajo:hover {
+  animation-play-state: paused;
+  transform: scale(15);
+  transition: all .2s ease-in-out;
 }
