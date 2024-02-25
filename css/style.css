@@ -50,7 +50,11 @@ img {
   border: 2.5rem dashed blue;
 }
 
-
+.newText {
+  font-size: 0.75rem;
+  /* background-color: rgb(86, 109, 43); */
+  text-align: center;
+}
 
 /* jednostki wzgledne */
 
@@ -74,6 +78,9 @@ html {
 
 .secondchild1 {
   font-size: 0.75em;
+  display: flex;
+  justify-content: center;
+  text-align: center;
 }
 
 /* @media rules */
@@ -315,6 +322,13 @@ padding: 1rem;
   
 
   
+  .box:nth-child(2) img {
+    float: left;
+    padding-right: 20px;
+    max-width: 60%;
+    max-height: 60%;
+  }
+
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
@@ -350,6 +364,26 @@ padding: 1rem;
 
   .boxLastline {
     display: none;
+  }
+
+  .box:nth-child(2) img {
+    float: left;
+    padding: 5px;
+    max-width: 90%;
+    max-height: 55px;
+    
+  }
+  .newText {
+    font-size: 0.75rem;
+    /* background-color: rgb(86, 109, 43); */
+    text-align: center;
+    padding-top: 10px;
+  }
+
+  .box:nth-child(2) {
+    background-color: rgb(109, 212, 30);
+
+    aspect-ratio: 3/2;
   }
 }
 
@@ -506,7 +540,15 @@ padding: 1rem;
     /* 8px domyslny margin od body w przegladarce */
     height: calc(100vh / 2);
     border: 5px solid grey;
+    justify-content: center;
+    
   }
+
+  .box:nth-child(1) {
+    justify-content: center;
+    
+  }
+
 
   .boxLastline,
   .box:nth-child(4),
@@ -530,6 +572,14 @@ padding: 1rem;
     order: 3;
     flex-grow: 3;
     flex-basis: calc(((100vw) / 6 - 16px / 6));
+    background: rgb(236,255,0);
+    background: -moz-linear-gradient(11deg, rgba(236,255,0,1) 0%, rgba(58,183,22,1) 47%, rgba(255,0,236,1) 100%);
+    background: -webkit-linear-gradient(11deg, rgba(236,255,0,1) 0%, rgba(58,183,22,1) 47%, rgba(255,0,236,1) 100%);
+    background: linear-gradient(11deg, rgba(236,255,0,1) 0%, rgba(58,183,22,1) 47%, rgba(255,0,236,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecff00",endColorstr="#ff00ec",GradientType=1);
+    align-items: center;
+    display: flex;
+
   }
 
   .box:nth-child(6) {
@@ -541,4 +591,134 @@ padding: 1rem;
 
     flex-grow: 1;
   }
+}
+
+.flower-container {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+.flower {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 1s ease-in-out;
+}
+
+.flower1 {
+  animation: showFlower1 4s 0s forwards;
+}
+.flower2 {
+  animation: showFlower2 4s 4s forwards;
+}
+.flower3 {
+  animation: showFlower3 4s 8s forwards;
+}
+.flower4 {
+  animation: showFlower4 4s 12s forwards;
+}
+
+@keyframes showFlower1 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showFlower2 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showFlower3 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes showFlower4 {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  75% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.card-4 {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.jajo {
+  background-color: yellow;
+  animation-name: spin;
+  animation-duration: 500ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear; 
+  text-align: center;
+  mix-blend-mode: multiply;
+}
+
+@keyframes spin {
+from {
+    transform:rotate(0deg);
+}
+to {
+    transform:rotate(360deg);
+};
+}
+
+.jajo:hover {
+  animation-play-state: paused;
+  transform: scale(15);
+  transition: all .2s ease-in-out;
 }
