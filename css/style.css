@@ -6,15 +6,28 @@
   box-sizing: border-box;
   /* margin: 1rem; */
 }
+
 /* 
 #siteLayout{
   overflow: hidden;
 } */
 
+
+
+
 p {
   text-align: center;
   margin: 0;
 }
+
+img {
+
+  max-width: 100%;
+  height: auto;
+}
+
+
+
 
 /* .box p:first-of-type {
   font-size: 2.5rem;
@@ -46,7 +59,8 @@ p {
 /* jednostki wzgledne */
 
 html {
-  font-size: 62.5%; /* odpowiednik 10px bo 10/16 */
+  font-size: 62.5%;
+  /* odpowiednik 10px bo 10/16 */
 }
 
 .parent {
@@ -54,7 +68,8 @@ html {
 }
 
 .child1 {
-  font-size: 1.5em; /* 1.5 x 32 = 48*/
+  font-size: 1.5em;
+  /* 1.5 x 32 = 48*/
 }
 
 .child2 {
@@ -89,8 +104,91 @@ html {
     width: 100%;
     padding: 50px;
     border: 3rem solid red;
-    margin: 0 auto; /* wycentrowujemy diva */
+    margin: 0 auto;
+    /* wycentrowujemy diva */
   }
+
+  
+
+  .lenorImg {
+    background-image: url('https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp');
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+    float: left;
+    background-repeat: no-repeat;
+  }
+
+
+  .card9{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .lenorTittle{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #9f0e0e
+  }
+
+  .lenorContent {
+    padding-top: 1rem;
+    text-align: justify;
+    padding-right: 2rem;
+    font-size: 2rem;
+  }
+.lenorBoxContent{
+  padding: 2rem;
+}
+
+.lenorImg {
+  background-image: url('https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp');
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 80%;
+  float: left;
+  background-repeat: no-repeat;
+}
+
+
+.card9{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.lenorTittle{
+  font-size: 3.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff
+}
+
+.lenorContent {
+  width: 100%;
+  padding-top: 1rem;
+  text-align: justify;
+  padding-right: 2rem;
+  font-size: 1.8rem;
+}
+.lenorBoxContent{
+padding: 1rem;
+}
+
+.box:nth-child(9) .card{
+  background: none;
+}
+
+.box:nth-child(9) {
+  background: linear-gradient(#5f94e9, #aaafe6);
+ 
+}
+
+
+
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -146,6 +244,84 @@ html {
     font-size: 0.75em;
   }
 
+  .lenorImg {
+    background-image: url('https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp');
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+    float: left;
+    background-repeat: no-repeat;
+  }
+
+
+  .card9{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .lenorTittle{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff
+  }
+
+  .lenorContent {
+    padding-top: 1rem;
+    text-align: justify;
+    padding-right: 2rem;
+    font-size: rem;
+  }
+.lenorBoxContent{
+  padding: 1rem;
+}
+
+.lenorImg {
+  background-image: url('https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp');
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 80%;
+  float: left;
+  background-repeat: no-repeat;
+}
+
+
+.card9{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.lenorTittle{
+  font-size: 1.5rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff
+}
+
+.lenorContent {
+  padding-top: 1rem;
+  text-align: justify;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+}
+.lenorBoxContent{
+padding: 1rem;
+}
+
+.box:nth-child(9) .card{
+  background: none;
+}
+
+.box:nth-child(9) {
+  background: linear-gradient(#5f94e9, #aaafe6);
+  border: 1px solid rgb(129, 129, 130);
+}
+
+  
+
+  
   .box:nth-child(2) img {
     float: left;
     padding-right: 20px;
@@ -156,6 +332,7 @@ html {
 }
 
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
   .shortText,
   .longText {
     display: none;
@@ -174,7 +351,8 @@ html {
   }
 
   .box {
-    width: calc(50vw - 8px); /* 8px domyslny margin od body w przegladarce */
+    width: calc(50vw - 8px);
+    /* 8px domyslny margin od body w przegladarce */
     height: calc(100vh / 3);
     border: 5px solid grey;
   }
@@ -210,6 +388,7 @@ html {
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+
   .shortText,
   .longText {
     display: none;
@@ -228,7 +407,8 @@ html {
   }
 
   .box {
-    width: calc(50vw - 8px); /* 8px domyslny margin od body w przegladarce */
+    width: calc(50vw - 8px);
+    /* 8px domyslny margin od body w przegladarce */
     height: calc(100vh / 3);
     border: 5px solid grey;
   }
@@ -250,9 +430,94 @@ html {
   .box:nth-child(3) {
     order: -2;
   }
+
+  .box:nth-child(8) {
+    display: none;
+  }
+
+  .box:nth-child(9) {
+    height: calc(100vh/3)
+  }
+
+
+
+
+  .lenorImg {
+    background-image: url('https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp');
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+    float: left;
+    background-repeat: no-repeat;
+  }
+
+
+  .card9{
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+  .lenorTittle{
+    font-size: 2rem;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #fff
+  }
+
+  .lenorContent {
+    padding-top: 1rem;
+    text-align: justify;
+    padding-right: 2rem;
+    font-size: 1.3rem;
+  }
+.lenorBoxContent{
+  padding: 1rem;
+}
+
+.lenorImg {
+  background-image: url('https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp');
+  background-position: center;
+  background-size: contain;
+  width: 100%;
+  height: 80%;
+  float: left;
+  background-repeat: no-repeat;
+}
+
+
+.card9{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+}
+.lenorTittle{
+  font-size: 2rem;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color: #fff
+}
+
+.lenorContent {
+  padding-top: 1rem;
+  text-align: justify;
+  padding-right: 2rem;
+  font-size: 1.3rem;
+}
+.lenorBoxContent{
+padding: 1rem;
+}
+
+.box:nth-child(9) {
+  background: linear-gradient(#5f94e9, #aaafe6);
+  border: 1px solid rgb(129, 129, 130);
+}
+
+
 }
 
 @media screen and (min-width: 1200px) {
+
   .shortText,
   .longText {
     display: none;
@@ -323,6 +588,7 @@ html {
 
   .box:nth-child(9) {
     flex-basis: calc(((100vw) / 6 - 16px / 6));
+
     flex-grow: 1;
   }
 }
