@@ -43,6 +43,12 @@ img {
   border: 2.5rem dashed blue;
 }
 
+.newText {
+  font-size: 0.75rem;
+  /* background-color: rgb(86, 109, 43); */
+  text-align: center;
+}
+
 /* jednostki wzgledne */
 
 html {
@@ -68,34 +74,6 @@ html {
   display: flex;
   justify-content: center;
   text-align: center;
-}
-
-/*Daryna box2 */
-.box:nth-child(2) {
-  background: rgb(20,165,195);
-  background: linear-gradient(335deg, rgba(20,165,195,1) 9%, rgba(100,223,135,1) 42%, rgb(255, 249, 85) 95%);
-  overflow: auto;
-}
-.box:nth-child(2) img {
-  float: left;
-  padding: 0 5px;
-  max-width: 70%;
-}
-
-.spring {
-  font-size: 1.5vw;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #069742;
-  padding: 0.5rem;
-}
-.newText {
-  width: 100%;
-  height: 100%;
-  text-align: justify;
-  padding: 0 5px;
-  font-size: 1vw;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #ffffff;
 }
 
 /* @media rules */
@@ -195,7 +173,6 @@ html {
   .box:nth-child(9) {
     background: linear-gradient(#5f94e9, #aaafe6);
   }
-    
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -350,7 +327,7 @@ html {
     width: calc(50vw - 4px);
     /* 8px domyslny margin od body w przegladarce */
     height: calc(100vh / 2);
-    border: 1px solid rgb(236, 236, 80);
+    border: 2px solid rgb(236, 236, 80);
   }
 
   .box:nth-child(3),
@@ -361,36 +338,203 @@ html {
     display: none;
   }
 
-  /* Daryna box2 */
-
-  .box:nth-child(2) {
-    background: rgb(20,165,195);
-    background: linear-gradient(335deg, rgba(20,165,195,1) 9%, rgba(100,223,135,1) 42%, rgb(255, 249, 85) 95%);
-    overflow: auto;
-  }
+  /*Daryna box2 */
   .box:nth-child(2) img {
     float: left;
-    padding: 0 5px;
-    max-width: 70%;
+    padding: 5px 5px 0 5px;
+    max-height: 155px;
   }
-
   .spring {
-    font-size: 2.5vw;
+    font-size: 2.3rem;
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #069742;
-    padding: 0.5rem;
+    color: #e8f532;
   }
-
   .newText {
     width: 100%;
-    height: 100%;
     text-align: justify;
     padding: 0 5px;
-    font-size: 1.8vw;
+    font-size: 1.5vw;
     font-family: Georgia, "Times New Roman", Times, serif;
-    color: #ffffff;
   }
 
+  .box:nth-child(2) {
+    background: linear-gradient(#2bd904, #f3fb0c);
+  }
+
+  /* Filip box9 */
+  .lenorImg {
+    background-image: url("https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp");
+    background-position: center;
+    background-size: contain;
+    width: 100%;
+    height: 80%;
+    float: left;
+    background-repeat: no-repeat;
+  }
+
+  .card9 {
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+  }
+
+  .lenorTittle {
+    font-size: 3.5rem;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    color: #fff;
+  }
+
+  .lenorContent {
+    width: 100%;
+    padding-top: 1rem;
+    text-align: justify;
+    padding-right: 2rem;
+    font-size: 1.8rem;
+  }
+  .lenorBoxContent {
+    padding: 1rem;
+  }
+
+  .box:nth-child(9) .card {
+    background: none;
+  }
+
+  .box:nth-child(9) {
+    background: linear-gradient(#5f94e9, #aaafe6);
+  }
+  .flower-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
+
+  /* Emil box5 */
+  .flower {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .flower1 {
+    animation: showFlower1 4s 0s forwards;
+  }
+  .flower2 {
+    animation: showFlower2 4s 4s forwards;
+  }
+  .flower3 {
+    animation: showFlower3 4s 8s forwards;
+  }
+  .flower4 {
+    animation: showFlower4 4s 12s forwards;
+  }
+
+  @keyframes showFlower1 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes showFlower2 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes showFlower3 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes showFlower4 {
+    0% {
+      opacity: 0;
+    }
+    25% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 0;
+    }
+    75% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  /* Hubert box1 */
+
+  .card-4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .jajo {
+    background-color: yellow;
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-align: center;
+    mix-blend-mode: multiply;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .jajo:hover {
+    animation-play-state: paused;
+    transform: scale(15);
+    transition: all 0.2s ease-in-out;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -559,6 +703,7 @@ html {
     order: 2;
     flex-grow: 2;
     flex-basis: calc(((100vw) / 6 - 16px / 6));
+    display: none;
   }
 
   .box:nth-child(1) {
@@ -617,15 +762,12 @@ html {
 .flower1 {
   animation: showFlower1 4s 0s forwards;
 }
-
 .flower2 {
   animation: showFlower2 4s 4s forwards;
 }
-
 .flower3 {
   animation: showFlower3 4s 8s forwards;
 }
-
 .flower4 {
   animation: showFlower4 4s 12s forwards;
 }
@@ -634,19 +776,15 @@ html {
   0% {
     opacity: 0;
   }
-
   25% {
     opacity: 1;
   }
-
   50% {
     opacity: 1;
   }
-
   75% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
@@ -656,19 +794,15 @@ html {
   0% {
     opacity: 0;
   }
-
   25% {
     opacity: 0;
   }
-
   50% {
     opacity: 1;
   }
-
   75% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
@@ -678,19 +812,15 @@ html {
   0% {
     opacity: 0;
   }
-
   25% {
     opacity: 0;
   }
-
   50% {
     opacity: 0;
   }
-
   75% {
     opacity: 1;
   }
-
   100% {
     opacity: 0;
   }
@@ -700,19 +830,15 @@ html {
   0% {
     opacity: 0;
   }
-
   25% {
     opacity: 0;
   }
-
   50% {
     opacity: 0;
   }
-
   75% {
     opacity: 0;
   }
-
   100% {
     opacity: 1;
   }
@@ -724,7 +850,6 @@ html {
   height: 100%;
   overflow: hidden;
 }
-
 .jajo {
   background-color: yellow;
   animation-name: spin;
@@ -748,58 +873,4 @@ html {
   animation-play-state: paused;
   transform: scale(15);
   transition: all 0.2s ease-in-out;
-}
-
-
-/* https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp */
-
-
-
-.lenorTittle {
-  text-align: center;
-  font-size: 2rem;
-  color: #fff;
-  margin-top: 0;
-  text-transform: uppercase;
-}
-
-.lenorContent {
-  text-align: justify;
-  font-size: 1.5rem;
-}
-
-.lenorContent img {
-  width: 40%;
-  float: left;
-  animation: fade 2s linear;
-}
-
-.lenorContent img:hover {
-  transform: scale(110%);
-}
-
-.lenorTittle2 {
-  font-size: 1.5rem;
-  margin: 1rem 0;
-  font-style: italic;
-  text-align: center;
-}
-
-.box:nth-child(9) {
-  background: linear-gradient(#5f94e9, #aaafe6);
-  border: 1px solid rgb(129, 129, 130);
-  padding: 2rem;
-  overflow: auto;
-
-}
-
-@keyframes fade {
-  0% {
-    opacity: 0;
-
-  }
-
-  100% {
-    opacity: 1;
-  }
 }
