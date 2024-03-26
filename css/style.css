@@ -70,34 +70,6 @@ html {
   text-align: center;
 }
 
-/*Daryna box2 */
-.box:nth-child(2) {
-  background: rgb(20,165,195);
-  background: linear-gradient(335deg, rgba(20,165,195,1) 9%, rgba(100,223,135,1) 42%, rgb(255, 249, 85) 95%);
-  overflow: auto;
-}
-.box:nth-child(2) img {
-  float: left;
-  padding: 0 5px;
-  max-width: 70%;
-}
-
-.spring {
-  font-size: 1.5vw;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #069742;
-  padding: 0.5rem;
-}
-.newText {
-  width: 100%;
-  height: 100%;
-  text-align: justify;
-  padding: 0 5px;
-  font-size: 1vw;
-  font-family: Georgia, "Times New Roman", Times, serif;
-  color: #ffffff;
-}
-
 /* @media rules */
 
 @media screen and (max-width: 575px) {
@@ -195,7 +167,6 @@ html {
   .box:nth-child(9) {
     background: linear-gradient(#5f94e9, #aaafe6);
   }
-    
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
@@ -361,16 +332,80 @@ html {
     display: none;
   }
 
-  /* Daryna box2 */
+  .box:nth-child(1) img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 40vh;
+  }
 
+  .secondchild1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .jajo {
+    background-color: yellow;
+    animation-name: spin;
+    animation-duration: 650ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-align: center;
+    mix-blend-mode: multiply;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .jajo:hover {
+    animation-play-state: paused;
+    transform: scale(15);
+    transition: all 0.2s ease-in-out;
+  }
+
+  .box:nth-child(1) {
+    background: rgb(236, 255, 0);
+    background: -moz-linear-gradient(
+      11deg,
+      rgba(236, 255, 0, 1) 0%,
+      rgba(58, 183, 22, 1) 47%,
+      rgba(255, 0, 236, 1) 100%
+    );
+    background: -webkit-linear-gradient(
+      11deg,
+      rgba(236, 255, 0, 1) 0%,
+      rgba(58, 183, 22, 1) 47%,
+      rgba(255, 0, 236, 1) 100%
+    );
+    background: linear-gradient(
+      11deg,
+      rgba(236, 255, 0, 1) 0%,
+      rgba(58, 183, 22, 1) 47%,
+      rgba(255, 0, 236, 1) 100%
+    );
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecff00",endColorstr="#ff00ec",GradientType=1);
+  }
   .box:nth-child(2) {
-    background: rgb(20,165,195);
-    background: linear-gradient(335deg, rgba(20,165,195,1) 9%, rgba(100,223,135,1) 42%, rgb(255, 249, 85) 95%);
+    background: rgb(20, 165, 195);
+    background: linear-gradient(
+      335deg,
+      rgba(20, 165, 195, 1) 9%,
+      #64df87 42%,
+      rgb(255, 249, 85) 95%
+    );
     overflow: auto;
   }
   .box:nth-child(2) img {
     float: left;
-    padding: 0 5px;
+    padding: 0 10px;
     max-width: 70%;
   }
 
@@ -385,12 +420,181 @@ html {
     width: 100%;
     height: 100%;
     text-align: justify;
-    padding: 0 5px;
+    padding: 0 7px;
     font-size: 1.8vw;
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #ffffff;
   }
+  .card-4 {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+  .flower-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+  }
 
+  .flower {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+  }
+
+  .flower1 {
+    animation: showFlower1 4s 0s forwards;
+  }
+
+  .flower2 {
+    animation: showFlower2 4s 4s forwards;
+  }
+
+  .flower3 {
+    animation: showFlower3 4s 8s forwards;
+  }
+
+  .flower4 {
+    animation: showFlower4 4s 12s forwards;
+  }
+
+  @keyframes showFlower1 {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 1;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes showFlower2 {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 1;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes showFlower3 {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 1;
+    }
+
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes showFlower4 {
+    0% {
+      opacity: 0;
+    }
+
+    25% {
+      opacity: 0;
+    }
+
+    50% {
+      opacity: 0;
+    }
+
+    75% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
+
+  .box:nth-child(9) {
+    background: linear-gradient(#5f94e9, #aaafe6);
+    border: 1px solid rgb(129, 129, 130);
+    padding: 1rem;
+    overflow: auto;
+  }
+
+  .lenorTittle {
+    text-align: center;
+    font-size: 2rem;
+    color: #fff;
+    margin-top: 0;
+    text-transform: uppercase;
+  }
+
+  .lenorContent {
+    text-align: justify;
+    font-size: 1.6rem;
+  }
+
+  .lenorContent img {
+    width: 50%;
+    float: right;
+    animation: fade 2s linear;
+  }
+
+  .lenorContent img:hover {
+    transform: scale(110%);
+  }
+
+  .lenorTittle2 {
+    font-size: 1.5rem;
+    margin: 1rem 0;
+    font-style: italic;
+    text-align: center;
+  }
+
+  @keyframes fade {
+    0% {
+      opacity: 0;
+    }
+
+    100% {
+      opacity: 1;
+    }
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
@@ -589,6 +793,31 @@ html {
     display: flex;
   }
 
+  .jajo {
+    background-color: yellow;
+    animation-name: spin;
+    animation-duration: 500ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    text-align: center;
+    mix-blend-mode: multiply;
+  }
+
+  @keyframes spin {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(360deg);
+    }
+  }
+
+  .jajo:hover {
+    animation-play-state: paused;
+    transform: scale(15);
+    transition: all 0.2s ease-in-out;
+  }
+
   .box:nth-child(6) {
     display: none;
   }
@@ -750,10 +979,7 @@ html {
   transition: all 0.2s ease-in-out;
 }
 
-
 /* https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp */
-
-
 
 .lenorTittle {
   text-align: center;
@@ -790,13 +1016,11 @@ html {
   border: 1px solid rgb(129, 129, 130);
   padding: 2rem;
   overflow: auto;
-
 }
 
 @keyframes fade {
   0% {
     opacity: 0;
-
   }
 
   100% {
