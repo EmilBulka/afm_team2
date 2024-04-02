@@ -72,10 +72,14 @@ html {
 
 /*Daryna box2 */
 .box:nth-child(2) {
-  background: rgb(20,165,195);
-  background: linear-gradient(335deg, rgba(20,165,195,1) 9%, rgba(100,223,135,1) 42%, rgb(255, 249, 85) 95%);
+  background: rgb(20, 165, 195);
+  background: linear-gradient(335deg,
+      rgba(20, 165, 195, 1) 9%,
+      rgba(100, 223, 135, 1) 42%,
+      rgb(255, 249, 85) 95%);
   overflow: auto;
 }
+
 .box:nth-child(2) img {
   float: left;
   padding: 0 5px;
@@ -88,6 +92,7 @@ html {
   color: #069742;
   padding: 0.5rem;
 }
+
 .newText {
   width: 100%;
   height: 100%;
@@ -139,6 +144,7 @@ html {
     height: 100%;
     align-items: center;
   }
+
   .lenorTittle {
     font-size: 2rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -151,6 +157,7 @@ html {
     padding-right: 2rem;
     font-size: 2rem;
   }
+
   .lenorBoxContent {
     padding: 2rem;
   }
@@ -171,6 +178,7 @@ html {
     height: 100%;
     align-items: center;
   }
+
   .lenorTittle {
     font-size: 3.5rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -184,6 +192,7 @@ html {
     padding-right: 2rem;
     font-size: 1.8rem;
   }
+
   .lenorBoxContent {
     padding: 1rem;
   }
@@ -195,110 +204,130 @@ html {
   .box:nth-child(9) {
     background: linear-gradient(#5f94e9, #aaafe6);
   }
-    
 }
+
+/* 576-767 FILIP */
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
   body {
-    margin: 5px auto;
-    /* background-color: lightgray; */
+    margin: 0px auto;
+    background: linear-gradient(90deg,
+        rgba(58, 177, 180, 1) 0%,
+        rgba(29, 253, 149, 0.9473039215686274) 49%,
+        rgb(240, 221, 195) 100%);
   }
 
-  .shortText,
-  .longText {
-    margin: 0 5px;
+  .box:nth-child(4),
+  .box:nth-child(6),
+  .box:nth-child(7),
+  .box:nth-child(8) {
+    display: none;
+  }
+
+  .box:nth-child(2) {
+    display: flex;
+    align-items: center;
+    border: none !important;
+    background: transparent;
+    width: 46vw;
+
+  }
+
+  .box:nth-child(2) img {
+    width: 40%;
+    padding-right: 5px;
+    padding-left: 0;
+  }
+
+  .box:nth-child(3),
+  .box:nth-child(2),
+  .box:nth-child(1) {
+    height: auto;
+
+  }
+
+
+  .box:nth-child(3) p:nth-child(1) {
+    display: none;
   }
 
   .boxes {
     display: flex;
-    /* flex-wrap: wrap; */
     margin: 0;
     flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 2vw;
+
   }
 
-  /* .longText {
-    margin: 20px;
-  } */
+  .spring {
+    background-color: transparent;
+    color: rgb(11, 70, 4);
+    font-size: 1.5rem;
+  }
+
+  .newText {
+    font-size: 1.1rem;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    padding: 0;
+  }
+
+
 
   .box {
-    width: 50vw;
-    border: none;
-    /* padding: 5px; */
-    background-color: rgb(51, 149, 188);
-    border: 5px solid white;
-    height: auto;
+    width: 46vw;
+    border: none !important;
+    height: 35vh;
+    background: transparent;
+  }
+
+  .box:nth-child(1) {
+    display: flex;
+    align-items: center;
   }
 
   .box:nth-child(3) {
     width: 100%;
+    display: flex !important;
+    align-items: center;
+  }
+
+  .shortText {
+    padding: 0.4rem 0;
+    color: rgb(0, 0, 255);
+    background-color: rgb(84, 174, 243);
+  }
+
+  p.longText {
+    padding: 2vw;
+  }
+
+
+
+  .longText {
+    font-size: 1.2rem;
+    text-align: justify;
+    padding: 1.5rem;
+    background-color: transparent;
   }
 
   .card {
-    background-color: rgb(130, 238, 143);
     width: 100%;
-    height: 50vh;
   }
 
-  .child1 {
-    font-size: 3.5em;
-  }
+.card .longText{
 
-  .child2 {
-    font-size: 0.5em;
-  }
-
-  .secondchild1 {
-    font-size: 0.75em;
-  }
-
-  .lenorImg {
-    background-image: url("https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp");
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 80%;
-    float: left;
-    background-repeat: no-repeat;
-  }
-
-  .card9 {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-  }
-  .lenorTittle {
-    font-size: 2rem;
-    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    color: #fff;
-  }
+  padding: 2vw 0;
+}
 
   .lenorContent {
     padding-top: 1rem;
     text-align: justify;
-    padding-right: 2rem;
-    font-size: rem;
-  }
-  .lenorBoxContent {
-    padding: 1rem;
+    padding-right: 0rem !important;
+    font-size: 1.2rem !important;
   }
 
-  .lenorImg {
-    background-image: url("https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp");
-    background-position: center;
-    background-size: contain;
-    width: 100%;
-    height: 80%;
-    float: left;
-    background-repeat: no-repeat;
-  }
-
-  .card9 {
-    display: flex;
-    width: 100%;
-    height: 100%;
-    align-items: center;
-  }
   .lenorTittle {
     font-size: 1.5rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -308,31 +337,22 @@ html {
   .lenorContent {
     padding-top: 1rem;
     text-align: justify;
-    padding-right: 2rem;
-    font-size: 1.3rem;
-  }
-  .lenorBoxContent {
-    padding: 1rem;
+       font-size: 1.3rem;
   }
 
-  .box:nth-child(9) .card {
-    background: none;
-  }
-
-  .box:nth-child(9) {
-    background: linear-gradient(#5f94e9, #aaafe6);
-    border: 1px solid rgb(129, 129, 130);
-  }
-
-  .box:nth-child(2) img {
-    float: left;
-    padding-right: 20px;
-    max-width: 60%;
-    max-height: 60%;
+  .jajo {
+    animation-duration: 2000ms !important;
   }
 }
 
+
+
+
+
+
+
 @media screen and (min-width: 768px) and (max-width: 991px) {
+
   .shortText,
   .longText {
     display: none;
@@ -364,10 +384,14 @@ html {
   /* Daryna box2 */
 
   .box:nth-child(2) {
-    background: rgb(20,165,195);
-    background: linear-gradient(335deg, rgba(20,165,195,1) 9%, rgba(100,223,135,1) 42%, rgb(255, 249, 85) 95%);
+    background: rgb(20, 165, 195);
+    background: linear-gradient(335deg,
+        rgba(20, 165, 195, 1) 9%,
+        rgba(100, 223, 135, 1) 42%,
+        rgb(255, 249, 85) 95%);
     overflow: auto;
   }
+
   .box:nth-child(2) img {
     float: left;
     padding: 0 5px;
@@ -390,10 +414,10 @@ html {
     font-family: Georgia, "Times New Roman", Times, serif;
     color: #ffffff;
   }
-
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
+
   .shortText,
   .longText {
     display: none;
@@ -460,6 +484,7 @@ html {
     height: 100%;
     align-items: center;
   }
+
   .lenorTittle {
     font-size: 2rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -472,6 +497,7 @@ html {
     padding-right: 2rem;
     font-size: 1.3rem;
   }
+
   .lenorBoxContent {
     padding: 1rem;
   }
@@ -492,6 +518,7 @@ html {
     height: 100%;
     align-items: center;
   }
+
   .lenorTittle {
     font-size: 2rem;
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
@@ -504,6 +531,7 @@ html {
     padding-right: 2rem;
     font-size: 1.3rem;
   }
+
   .lenorBoxContent {
     padding: 1rem;
   }
@@ -515,6 +543,7 @@ html {
 }
 
 @media screen and (min-width: 1200px) {
+
   .shortText,
   .longText {
     display: none;
@@ -566,25 +595,19 @@ html {
     flex-grow: 3;
     flex-basis: calc(((100vw) / 6 - 16px / 6));
     background: rgb(236, 255, 0);
-    background: -moz-linear-gradient(
-      11deg,
-      rgba(236, 255, 0, 1) 0%,
-      rgba(58, 183, 22, 1) 47%,
-      rgba(255, 0, 236, 1) 100%
-    );
-    background: -webkit-linear-gradient(
-      11deg,
-      rgba(236, 255, 0, 1) 0%,
-      rgba(58, 183, 22, 1) 47%,
-      rgba(255, 0, 236, 1) 100%
-    );
-    background: linear-gradient(
-      11deg,
-      rgba(236, 255, 0, 1) 0%,
-      rgba(58, 183, 22, 1) 47%,
-      rgba(255, 0, 236, 1) 100%
-    );
-    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecff00",endColorstr="#ff00ec",GradientType=1);
+    background: -moz-linear-gradient(11deg,
+        rgba(236, 255, 0, 1) 0%,
+        rgba(58, 183, 22, 1) 47%,
+        rgba(255, 0, 236, 1) 100%);
+    background: -webkit-linear-gradient(11deg,
+        rgba(236, 255, 0, 1) 0%,
+        rgba(58, 183, 22, 1) 47%,
+        rgba(255, 0, 236, 1) 100%);
+    background: linear-gradient(11deg,
+        rgba(236, 255, 0, 1) 0%,
+        rgba(58, 183, 22, 1) 47%,
+        rgba(255, 0, 236, 1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ecff00", endColorstr="#ff00ec", GradientType=1);
     align-items: center;
     display: flex;
   }
@@ -739,6 +762,7 @@ html {
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -750,10 +774,7 @@ html {
   transition: all 0.2s ease-in-out;
 }
 
-
 /* https://www.drmaxdrogeria.pl/_i/-906516972.webp?m2=%2Fmedia%2Fcatalog%2Fproduct%2F0%2F1%2F01ef90efd6356_8001841182162_T1.png&fit=contain&w=350&h=350&format=webp */
-
-
 
 .lenorTittle {
   text-align: center;
@@ -790,13 +811,11 @@ html {
   border: 1px solid rgb(129, 129, 130);
   padding: 2rem;
   overflow: auto;
-
 }
 
 @keyframes fade {
   0% {
     opacity: 0;
-
   }
 
   100% {
